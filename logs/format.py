@@ -422,7 +422,7 @@ def build_body(
     <li><a href="/research-logs/">Research Logs</a></li>
     <li><a href="/frameworks/">Frameworks</a></li>
     <li><a href="/about/">About</a></li>
-    <li><a href="/join/">Join Us</a></li>
+    <li><a href="/join-us.html">Join Us</a></li>
     <li><a href="/funding/">Funding</a></li>
   </ul>
 </nav>
@@ -456,7 +456,7 @@ def build_body(
           <li><a href="/research-logs/">Research Logs</a></li>
           <li><a href="/frameworks/">Frameworks</a></li>
           <li><a href="/about/">About</a></li>
-          <li><a href="/join/">Join Us</a></li>
+          <li><a href="/join-us.html">Join Us</a></li>
           <li><a href="/funding/">Funding</a></li>
         </ul>
       </div>
