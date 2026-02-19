@@ -213,7 +213,7 @@ def build_head(
             "affiliation": {
                 "@type": "Organization",
                 "name": "Interdisciplinary Systems Research Lab (iSRL)",
-                "url":  "https://isrl.in"
+                "url":  "https://isrl-research.github.io"
             }
         }
         for a in (authors or ["Lalitha A R"])
@@ -229,7 +229,7 @@ def build_head(
         "publisher": {
             "@type": "Organization",
             "name":  "Interdisciplinary Systems Research Lab (iSRL)",
-            "url":   "https://isrl.in"
+            "url":   "https://isrl-research.github.io"
         },
         "license":           "https://creativecommons.org/licenses/by/4.0/",
         "identifier":        doi,
@@ -240,7 +240,7 @@ def build_head(
         "isPartOf": {
             "@type": "Collection",
             "name":  "iSRL Research Logs",
-            "url":   "https://isrl.in/research-logs/"
+            "url":   "https://isrl-research.github.io/logs/"
         }
     }
     ld_json = json.dumps(ld, indent=2, ensure_ascii=False)
@@ -353,7 +353,7 @@ def build_right_sidebar(
     <div class="isrl-right-section">
       <span class="isrl-right-label">Project</span>
       <div class="isrl-right-meta">
-        <a href="/research-logs/">Indian Food Informatics Data</a><br>
+        <a href="https://isrl-research.github.io/ifid.html">Indian Food Informatics Data</a><br>
         IFID 2026
       </div>
     </div>
@@ -419,8 +419,8 @@ def build_body(
     <span class="logo-i">i</span>SRL
   </a>
   <ul class="isrl-nav-list" role="list">
-    <li><a href="/research-logs/">Research Logs</a></li>
-    <li><a href="/frameworks/">Frameworks</a></li>
+    <li><a href="/logs/">Research Logs</a></li>
+    <li><a href="/ifid.html">IFID</a></li>
     <li><a href="/about/">About</a></li>
     <li><a href="/join-us.html">Join Us</a></li>
     <li><a href="/funding/">Funding</a></li>
@@ -453,8 +453,8 @@ def build_body(
       </button>
       <div class="isrl-nav-panel" id="isrl-nav-panel">
         <ul class="isrl-nav-list" role="list">
-          <li><a href="/research-logs/">Research Logs</a></li>
-          <li><a href="/frameworks/">Frameworks</a></li>
+          <li><a href="/logs/">Research Logs</a></li>
+          <li><a href="/ifid.html">IFID</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/join-us.html">Join Us</a></li>
           <li><a href="/funding/">Funding</a></li>
@@ -629,7 +629,7 @@ def main():
     slug     = re.sub(r"[^a-z0-9]+", "-", source.stem.lower()).strip("-")
     canon    = ask(
         "Canonical URL",
-        default=f"https://isrl.in/research-logs/{slug}/"
+        default=f"https://isrl-research.github.io/logs/{slug}/"
     )
 
     # ── Build output ──
