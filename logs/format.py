@@ -204,7 +204,7 @@ def build_head(
     safe_desc    = description.replace('"', '&quot;').replace("'", "&#39;")
 
     # JSON-LD
-    schema_types = {"report": "TechArticle", "paper": "ScholarlyArticle", "audit": "CriticalReview"}
+    schema_types = {"report": "ScholarlyArticle", "paper": "ScholarlyArticle", "audit": "ScholarlyArticle"}
     schema_type  = schema_types.get(doc_type, "ScholarlyArticle")
     author_nodes = [
         {
