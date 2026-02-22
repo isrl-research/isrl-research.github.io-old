@@ -421,9 +421,9 @@ def build_body(
   <ul class="isrl-nav-list" role="list">
     <li><a href="/logs/">Research Logs</a></li>
     <li><a href="/ifid.html">IFID</a></li>
-    <li><a href="/about/">About</a></li>
+    <li><a href="/about.html">About</a></li>
     <li><a href="/join-us.html">Join Us</a></li>
-    <li><a href="/funding/">Funding</a></li>
+    <li><a href="/funding.html">Funding</a></li>
   </ul>
 </nav>
 
@@ -455,9 +455,9 @@ def build_body(
         <ul class="isrl-nav-list" role="list">
           <li><a href="/logs/">Research Logs</a></li>
           <li><a href="/ifid.html">IFID</a></li>
-          <li><a href="/about/">About</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="/join-us.html">Join Us</a></li>
-          <li><a href="/funding/">Funding</a></li>
+          <li><a href="/funding.html">Funding</a></li>
         </ul>
       </div>
     </nav>
