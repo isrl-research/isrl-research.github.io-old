@@ -46,7 +46,7 @@ The site is a **Jekyll static site** deployed on GitHub Pages. The `_site/` dire
 
 ## Branding Guidelines
 
-**The following must not be changed without explicit notice from the PI:**
+**The following must not be changed without explicit notice from the Lead Researcher:**
 
 - **Color palette** — `--bg: #f7f6f2`, `--ink: #111110`, `--navy: #2c346b`, `--red: #c0392b`
 - **Typefaces** — Libre Baskerville (titles), Source Serif 4 (body), DM Mono (monospace)
