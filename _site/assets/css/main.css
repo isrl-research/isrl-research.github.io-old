@@ -11,7 +11,7 @@
   --bg:          #f7f6f2;
   --ink:         #111110;
   --ink-mid:     #3a3a38;
-  --ink-muted:   #5a5a57;
+  --ink-muted:   #6b6b68;
   --navy:        #2c346b;
   --red:         #c0392b;
   --rule:        #d0cfc8;
@@ -20,7 +20,7 @@
   --tag-a11y:    #2c5c3f;
   --tag-tool:    #5c3a2c;
   --tag-ai:      #4a2c5c;
-  --font-title:  'Libre Baskerville', Georgia, serif;
+  --font-title:  'Playfair Display', Georgia, serif;
   --font-body:   'Source Serif 4', Georgia, serif;
   --font-mono:   'DM Mono', 'Courier New', monospace;
   --sidebar-w:   260px;
