@@ -1,0 +1,66 @@
+<aside class="sidebar" aria-label="Site navigation">
+  <div class="logo-block">
+    <span class="logo-rule" aria-hidden="true"></span>
+    <a href="/" class="logo-wordmark" aria-label="iSRL home"><span class="logo-i">i</span>SRL</a>
+    <span class="logo-sub">Systemic Infrastructure</span>
+  </div>
+
+  <nav aria-label="Primary navigation">
+    <span class="nav-label">00 / Index</span>
+    <ul class="nav-list" role="list">
+      <li><a href="/logs/"{% if page.url == '/logs/' or page.url == '/logs/index.html' %} aria-current="page"{% endif %}>Research Logs</a></li>
+      <li><a href="/ifid.html"{% if page.url == '/ifid.html' %} aria-current="page"{% endif %}>IFID</a></li>
+      <li><a href="/about.html"{% if page.url == '/about.html' %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="/join-us.html"{% if page.url == '/join-us.html' %} aria-current="page"{% endif %}>Join Us</a></li>
+      <li><a href="/funding.html"{% if page.url == '/funding.html' %} aria-current="page"{% endif %}>Funding</a></li>
+    </ul>
+  </nav>
+
+  {% if page.toc_items %}
+  <nav class="toc-section" aria-label="Page contents">
+    <span class="toc-label">On This Page</span>
+    <ul class="toc-list" role="list">
+      {% for item in page.toc_items %}
+      <li{% if item.sub %} class="toc-sub"{% endif %}><a href="#{{ item.id }}">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
+  {% if page.show_filters %}
+  <div class="filter-section" aria-label="Filter by topic">
+    <span class="filter-label">Filter by Topic</span>
+    <ul class="filter-list" role="list">
+      <li>
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">
+          All <span class="filter-count" id="count-all"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="ifid" aria-pressed="false">
+          IFID 2026 <span class="filter-count" id="count-ifid"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="a11y" aria-pressed="false">
+          Web A11y <span class="filter-count" id="count-a11y"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="tool" aria-pressed="false">
+          Tools <span class="filter-count" id="count-tool"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="ai" aria-pressed="false">
+          AI / Systems <span class="filter-count" id="count-ai"></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="sidebar-footer">
+    <p>CC BY 4.0 International<br>Data is a permanent public asset<br>iSRL / Digital Public Infrastructure</p>
+  </div>
+</aside>

@@ -1,0 +1,17 @@
+<header class="mobile-header" role="banner">
+  <a href="/" class="mobile-logo" aria-label="iSRL home"><span class="logo-i">i</span>SRL</a>
+  <button class="hamburger" id="hamburger-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-drawer">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+  <a href="/" class="mobile-drawer-logo"><span class="logo-i">i</span>SRL</a>
+  <ul class="nav-list" role="list">
+    <li><a href="/logs/"{% if page.url == '/logs/' or page.url == '/logs/index.html' %} aria-current="page"{% endif %}>Research Logs</a></li>
+    <li><a href="/ifid.html"{% if page.url == '/ifid.html' %} aria-current="page"{% endif %}>IFID</a></li>
+    <li><a href="/about.html"{% if page.url == '/about.html' %} aria-current="page"{% endif %}>About</a></li>
+    <li><a href="/join-us.html"{% if page.url == '/join-us.html' %} aria-current="page"{% endif %}>Join Us</a></li>
+    <li><a href="/funding.html"{% if page.url == '/funding.html' %} aria-current="page"{% endif %}>Funding</a></li>
+  </ul>
+</nav>

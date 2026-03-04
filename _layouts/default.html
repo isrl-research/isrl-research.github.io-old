@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+{% if page.extra_head %}{{ page.extra_head }}{% endif %}
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+{% include mobile-nav.html %}
+
+<div class="site-wrapper">
+  {% include sidebar.html %}
+  {{ content }}
+</div>
+
+{% include mobile-nav-js.html %}
+</body>
+</html>

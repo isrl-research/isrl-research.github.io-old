@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8PD6FFEJEV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-8PD6FFEJEV");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Logs — iSRL — iSRL</title>
+<meta name="description" content="All research logs, reports, papers, and tools published by the Interdisciplinary Systems Research Lab. Open access under CC BY 4.0.">
+<link rel="canonical" href="https://isrl-research.github.io/logs/">
+<meta name="author" content="Lalitha A R">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isrl-research.github.io/logs/">
+<meta property="og:title" content="Research Logs — iSRL — iSRL">
+<meta property="og:description" content="All research logs, reports, papers, and tools published by the Interdisciplinary Systems Research Lab. Open access under CC BY 4.0.">
+<meta property="og:site_name" content="iSRL">
+<meta property="og:image" content="https://isrl-research.github.io/assets/isrl-logo-square.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Research Logs — iSRL — iSRL">
+<meta name="twitter:description" content="All research logs, reports, papers, and tools published by the Interdisciplinary Systems Research Lab. Open access under CC BY 4.0.">
+<meta name="twitter:image" content="https://isrl-research.github.io/assets/isrl-logo-square.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" type="image/png" href="/assets/isrl-logo-square.png">
+
+
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="mobile-header" role="banner">
+  <a href="/" class="mobile-logo" aria-label="iSRL home"><span class="logo-i">i</span>SRL</a>
+  <button class="hamburger" id="hamburger-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-drawer">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+  <a href="/" class="mobile-drawer-logo"><span class="logo-i">i</span>SRL</a>
+  <ul class="nav-list" role="list">
+    <li><a href="/logs/" aria-current="page">Research Logs</a></li>
+    <li><a href="/ifid.html">IFID</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/join-us.html">Join Us</a></li>
+    <li><a href="/funding.html">Funding</a></li>
+  </ul>
+</nav>
+
+
+<div class="site-wrapper">
+  <aside class="sidebar" aria-label="Site navigation">
+  <div class="logo-block">
+    <span class="logo-rule" aria-hidden="true"></span>
+    <a href="/" class="logo-wordmark" aria-label="iSRL home"><span class="logo-i">i</span>SRL</a>
+    <span class="logo-sub">Systemic Infrastructure</span>
+  </div>
+
+  <nav aria-label="Primary navigation">
+    <span class="nav-label">00 / Index</span>
+    <ul class="nav-list" role="list">
+      <li><a href="/logs/" aria-current="page">Research Logs</a></li>
+      <li><a href="/ifid.html">IFID</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/join-us.html">Join Us</a></li>
+      <li><a href="/funding.html">Funding</a></li>
+    </ul>
+  </nav>
+
+  
+
+  
+  <div class="filter-section" aria-label="Filter by topic">
+    <span class="filter-label">Filter by Topic</span>
+    <ul class="filter-list" role="list">
+      <li>
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">
+          All <span class="filter-count" id="count-all"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="ifid" aria-pressed="false">
+          IFID 2026 <span class="filter-count" id="count-ifid"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="a11y" aria-pressed="false">
+          Web A11y <span class="filter-count" id="count-a11y"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="tool" aria-pressed="false">
+          Tools <span class="filter-count" id="count-tool"></span>
+        </button>
+      </li>
+      <li>
+        <button class="filter-btn" data-filter="ai" aria-pressed="false">
+          AI / Systems <span class="filter-count" id="count-ai"></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="sidebar-footer">
+    <p>CC BY 4.0 International<br>Data is a permanent public asset<br>iSRL / Digital Public Infrastructure</p>
+  </div>
+</aside>
+
+    <main id="main-content" aria-label="Research logs">
+
+    <span class="page-eyebrow">Research Outputs</span>
+    <h1 class="page-title">Research Logs</h1>
+    <p class="page-intro">All reports, papers, preprints, datasets, and tools published by iSRL. Open access under CC BY 4.0 unless noted. Latest first.</p>
+
+    <p class="upcoming-note">
+      HTML reading versions of 2025 papers are being added progressively.
+      All papers are fully accessible via DOI / arXiv links below in the meantime.
+    </p>
+
+    <!-- ══════════════════════════════════════════════════════
+         2026
+    ═══════════════════════════════════════════════════════ -->
+    
+    <section class="year-group" aria-labelledby="year-2026">
+      <div class="year-header">
+        <h2 class="year-label" id="year-2026">2026</h2>
+        <span class="year-count" aria-label="5 outputs">5 outputs</span>
+      </div>
+
+      <ul class="logs-artifact-list" id="list-2026" aria-label="2026 research outputs">
+
+        <!-- Kaggle dataset — external, no _logs/ file -->
+        <li class="logs-artifact-item" data-tags="ifid">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ifid">IFID 2026</span>
+              <span class="tag" style="background:#5c3a2c;">Data</span>
+            </div>
+            <span class="artifact-type-logs">Dataset</span>
+            <span class="artifact-title-logs">Indian Food Ingredients &amp; Label Variants</span>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">February 2026</span>
+              <a href="https://doi.org/10.34740/KAGGLE/DSV/14783287"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="DOI: 10.34740/KAGGLE/DSV/14783287">
+                10.34740/KAGGLE/DSV/14783287
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.34740/KAGGLE/DSV/14783287"
+               class="read-link"
+               target="_blank" rel="noopener noreferrer">
+              View →
+            </a>
+          </div>
+        </li>
+
+        <!-- Dynamic entries from _logs/ collection — auto-populated -->
+        
+        <li class="logs-artifact-item" data-tags="ifid">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ifid">IFID 2026</span>
+            </div>
+            <span class="artifact-type-logs">Report</span>
+            <a href="/logs/fssai-2011-vs-2020.html" class="artifact-title-logs">Regulatory Delta of Food Labelling Laws in India: A Comparative Analysis of the FSSAI 2011 and 2020 Regulations</a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">February 2026</span>
+              <a href="https://doi.org/10.5281/zenodo.18719394" class="artifact-doi" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18719394</a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="/logs/fssai-2011-vs-2020.html" class="read-link">Read →</a>
+            <a href="https://doi.org/10.5281/zenodo.18719394" class="doi-link" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+        
+        <li class="logs-artifact-item" data-tags="ifid">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ifid">IFID 2026</span>
+            </div>
+            <span class="artifact-type-logs">Report</span>
+            <a href="/logs/emf-main-022026.html" class="artifact-title-logs">Identity, Transformation, and Function: A Tri-Axial Model for the Classification of Food Ingredient Identity</a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">February 2026</span>
+              <a href="https://doi.org/10.5281/zenodo.18714526" class="artifact-doi" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18714526</a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="/logs/emf-main-022026.html" class="read-link">Read →</a>
+            <a href="https://doi.org/10.5281/zenodo.18714526" class="doi-link" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+        
+        <li class="logs-artifact-item" data-tags="ifid">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ifid">IFID 2026</span>
+            </div>
+            <span class="artifact-type-logs">Report</span>
+            <a href="/logs/supreme-court-2026-food-shift.html" class="artifact-title-logs">Indian Supreme Court Defines Hierarchical Classification Framework for Food Products, Overruling Common Parlance Precedents</a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">February 2026</span>
+              <a href="https://doi.org/10.5281/zenodo.18651646" class="artifact-doi" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18651646</a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="/logs/supreme-court-2026-food-shift.html" class="read-link">Read →</a>
+            <a href="https://doi.org/10.5281/zenodo.18651646" class="doi-link" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+        
+        <li class="logs-artifact-item" data-tags="ifid">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ifid">IFID 2026</span>
+            </div>
+            <span class="artifact-type-logs">Paper</span>
+            <a href="/logs/ifid-ency.html" class="artifact-title-logs">Encyclopedia of Indian Food Ingredients</a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">February 2026</span>
+              <a href="https://doi.org/10.5281/zenodo.18650863" class="artifact-doi" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18650863</a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="/logs/ifid-ency.html" class="read-link">Read →</a>
+            <a href="https://doi.org/10.5281/zenodo.18650863" class="doi-link" target="_blank" rel="noopener noreferrer">DOI</a>
+          </div>
+        </li>
+        
+
+      </ul>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         2025
+    ═══════════════════════════════════════════════════════ -->
+    <section class="year-group" aria-labelledby="year-2025">
+      <div class="year-header">
+        <h2 class="year-label" id="year-2025">2025</h2>
+        <span class="year-count" aria-label="8 outputs">8 outputs</span>
+      </div>
+
+      <ul class="logs-artifact-list" id="list-2025" aria-label="2025 research outputs">
+
+        <li class="logs-artifact-item" data-tags="ai">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ai">AI / Systems</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.13140/RG.2.2.32588.07049"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Beyond the Human Blueprint: Toward Robomorphic Design in Autonomous Systems
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">December 2025</span>
+              <a href="https://doi.org/10.13140/RG.2.2.32588.07049"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.13140/RG.2.2.32588.07049
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.13140/RG.2.2.32588.07049"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="ai">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-ai">AI / Systems</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.13140/RG.2.2.31005.37601"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Reimagining Software Engineering Interviews in the AI Era: Beyond LeetCode Toward Real-World Competency Assessment
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">December 2025</span>
+              <a href="https://doi.org/10.13140/RG.2.2.31005.37601"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.13140/RG.2.2.31005.37601
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.13140/RG.2.2.31005.37601"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="a11y">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-a11y">Web A11y</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.5281/zenodo.18651817"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Making Accessibility Accessible, Part II: Systems, Psychology, and Infrastructure for Lasting Change
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">December 2025</span>
+              <a href="https://doi.org/10.5281/zenodo.18651817"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.5281/zenodo.18651817
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.5281/zenodo.18651817"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="a11y">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-a11y">Web A11y</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.13140/RG.2.2.19130.25285"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Making Accessibility Accessible, Part I: A Care Framework for Developer-Centered Tooling Infrastructure
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">December 2025</span>
+              <a href="https://doi.org/10.13140/RG.2.2.19130.25285"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.13140/RG.2.2.19130.25285
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.13140/RG.2.2.19130.25285"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="a11y tool">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-a11y">Web A11y</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.48550/arXiv.2512.07623"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Context-Adaptive Color Optimization for Web Accessibility: Balancing Perceptual Fidelity and Functional Requirements
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">December 2025</span>
+              <a href="https://doi.org/10.48550/arXiv.2512.07623"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.48550/arXiv.2512.07623
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.48550/arXiv.2512.07623"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="a11y tool">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-a11y">Web A11y</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.48550/arXiv.2512.05067"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Perceptually-Minimal Color Optimization for Web Accessibility: A Multi-Phase Constrained Approach
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">December 2025</span>
+              <a href="https://doi.org/10.48550/arXiv.2512.05067"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.48550/arXiv.2512.05067
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.48550/arXiv.2512.05067"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="a11y tool">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-a11y">Web A11y</span>
+              <span class="tag tag-tool">Tool</span>
+            </div>
+            <span class="artifact-type-logs">Python Library</span>
+            <a href="https://cm-colors.readthedocs.io/en/latest/"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              CM-Colors — Perceptually-minimal color accessibility optimizer
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">2025</span>
+              <span class="artifact-date-logs" style="color:var(--ink-muted);">PyPI · ReadTheDocs</span>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://cm-colors.readthedocs.io/en/latest/"
+               class="read-link"
+               target="_blank" rel="noopener noreferrer">Docs →</a>
+          </div>
+        </li>
+
+        <li class="logs-artifact-item" data-tags="a11y">
+          <div class="artifact-main">
+            <div class="artifact-tags">
+              <span class="tag tag-a11y">Web A11y</span>
+            </div>
+            <span class="artifact-type-logs">Preprint</span>
+            <a href="https://doi.org/10.48550/arXiv.2506.10324"
+               class="artifact-title-logs"
+               target="_blank" rel="noopener noreferrer">
+              Beyond Compliance: A User-Autonomy Framework for Inclusive and Customizable Web Accessibility
+            </a>
+            <div class="artifact-meta-logs">
+              <span class="artifact-date-logs">June 2025</span>
+              <a href="https://doi.org/10.48550/arXiv.2506.10324"
+                 class="artifact-doi"
+                 target="_blank" rel="noopener noreferrer">
+                10.48550/arXiv.2506.10324
+              </a>
+            </div>
+          </div>
+          <div class="artifact-read">
+            <a href="https://doi.org/10.48550/arXiv.2506.10324"
+               class="doi-link"
+               target="_blank" rel="noopener noreferrer">DOI →</a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <p class="no-results" id="no-results" role="status" aria-live="polite">
+      No outputs match this filter.
+    </p>
+
+  </main>
+
+  <script src="/assets/js/logs-filter.js"></script>
+
+</div>
+
+<script>
+(function () {
+  var btn    = document.getElementById('hamburger-btn');
+  var drawer = document.getElementById('mobile-drawer');
+  if (!btn || !drawer) return;
+
+  function close() {
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open navigation');
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+  }
+
+  btn.addEventListener('click', function () {
+    var exp = btn.getAttribute('aria-expanded') === 'true';
+    if (exp) {
+      close();
+    } else {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'Close navigation');
+      drawer.classList.add('open');
+      drawer.setAttribute('aria-hidden', 'false');
+      var first = drawer.querySelector('a');
+      if (first) first.focus();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      close();
+      btn.focus();
+    }
+  });
+
+  drawer.querySelectorAll('a').forEach(function (l) {
+    l.addEventListener('click', close);
+  });
+}());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+title: iSRL
+description: "An independent R&D lab building neutral, open-source systems designed to meet the reality of human complexity."
+url: "https://isrl-research.github.io"
+baseurl: ""
+
+collections:
+  logs:
+    output: true
+    permalink: /logs/:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "logs"
+    values:
+      layout: log
+
+exclude:
+  - "logs/*.tex"
+  - "logs/*.latexml.log"
+  - "logs/emf-audit.txt"
+  - "logs/format.py"
+  - "logs/sample-log.*"
+  - "logs/bookmark.sty.ltxml"
+  - "logs/expl3.sty.ltxml"
+  - "logs/tabularray.sty.ltxml"
+  - "temp.py"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "ifid/ency/temp.py"

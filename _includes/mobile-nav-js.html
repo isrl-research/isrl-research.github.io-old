@@ -1,0 +1,39 @@
+<script>
+(function () {
+  var btn    = document.getElementById('hamburger-btn');
+  var drawer = document.getElementById('mobile-drawer');
+  if (!btn || !drawer) return;
+
+  function close() {
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open navigation');
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+  }
+
+  btn.addEventListener('click', function () {
+    var exp = btn.getAttribute('aria-expanded') === 'true';
+    if (exp) {
+      close();
+    } else {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'Close navigation');
+      drawer.classList.add('open');
+      drawer.setAttribute('aria-hidden', 'false');
+      var first = drawer.querySelector('a');
+      if (first) first.focus();
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      close();
+      btn.focus();
+    }
+  });
+
+  drawer.querySelectorAll('a').forEach(function (l) {
+    l.addEventListener('click', close);
+  });
+}());
+</script>

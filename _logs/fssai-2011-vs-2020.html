@@ -1,0 +1,553 @@
+---
+layout: log
+title: "Regulatory Delta of Food Labelling Laws in India: A Comparative Analysis of the FSSAI 2011 and 2020 Regulations"
+date_iso: "2026-02-20"
+date_display: "February 2026"
+doc_type: report
+authors:
+  - "Lalitha A R"
+doi: "10.5281/zenodo.18719394"
+doi_url: "https://doi.org/10.5281/zenodo.18719394"
+platform: Zenodo
+description: "This report summarises the regulatory delta between the Food Safety and Standards (Packaging and Labelling) Regulations, 2011 and the Food Safety and Standards (Labelling and Display) Regulations, 2020."
+tags: ["ifid"]
+show_home: true
+show_ifid: true
+show_funding: true
+permalink: /logs/fssai-2011-vs-2020.html
+render_with_liquid: false
+toc:
+  - {id: "S2", text: "Regulatory Delta: 2011 vs 2020", level: 2}
+  - {id: "S2.SS1", text: "What the Law is Aiming to Address", level: 3}
+  - {id: "S3", text: "Practical Implications for Stakeholders", level: 2}
+  - {id: "S3.SS1", text: "For Food Businesses", level: 3}
+  - {id: "S3.SS2", text: "For Lawyers and Compliance Teams", level: 3}
+  - {id: "S3.SSx1", text: "The Compliance Checklist for Startups", level: 3}
+  - {id: "S4", text: "Implications for Digital Ingredient Identity Systems (IFID)", level: 2}
+  - {id: "S4.SS1", text: "Mandatory vs Optional Fields in IFID Records", level: 3}
+  - {id: "S5", text: "Conclusion", level: 2}
+  - {id: "bib", text: "References", level: 2}
+---
+    <div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_font_bold ltx_title_document">Regulatory Delta of Food Labelling Laws in India:
+<br class="ltx_break">A Comparative Analysis of the FSSAI 2011 and 2020 Regulations</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">
+<span class="ltx_text ltx_font_bold">Sai Nikhil Vukka<sup class="ltx_sup"><span class="ltx_text ltx_font_medium ltx_font_italic">1</span></sup></span>,
+<span class="ltx_text ltx_font_bold">Lalitha A. R.<sup class="ltx_sup"><span class="ltx_text ltx_font_medium ltx_font_italic">2</span></sup></span> 
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">1. Research Assistant, Indian Food Informatics Data (IFID) Project, ISRL 
+<br class="ltx_break">2. 
+Lead Researcher, Interdisciplinary Systems Research Lab (ISRL)
+</span>
+</span></span>
+</div>
+<div class="ltx_dates">(February 2026)</div>
+
+<div class="ltx_abstract">
+<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
+<p class="ltx_p">This short report summarises the regulatory “delta” between the Food Safety and Standards (Packaging and Labelling) Regulations, 2011 and the Food Safety and Standards (Labelling and Display) Regulations, 2020.
+The focus is on the transition toward prescriptive naming, structured allergen declarations, and risk-aware warnings.
+These shifts directly inform the selection of specific data fields in digital ingredient identity layers such as IFID.</p>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Background</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">In 2011, FSSAI notified the <em class="ltx_emph ltx_font_italic">Food Safety and Standards (Packaging and Labelling) Regulations, 2011</em>, which combined packaging requirements and labelling rules into a single framework.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite>
+Roughly a decade later, the authority split packaging and labelling into separate regulations and brought in the <em class="ltx_emph ltx_font_italic">Food Safety and Standards (Labelling and Display) Regulations, 2020</em>.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite>
+The 2020 move is more than a reshuffle of chapters: it makes labelling more structured, more consumer-facing, and easier to plug into digital compliance tools.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>, <a href="#bib.bib3" title="" class="ltx_ref">3</a>, <a href="#bib.bib4" title="" class="ltx_ref">4</a>]</cite></p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">Over this period, both industrial food systems and digital traceability infrastructure in India have grown in complexity.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib8" title="" class="ltx_ref">8</a>, <a href="#bib.bib7" title="" class="ltx_ref">7</a>]</cite>
+As more product categories emerged and more data and feedback became available, regulators have had opportunities to refine how key information is displayed and standardised.
+This report gives a compact view of how the 2020 regulations shift emphasis compared to 2011, and what that means for people who need to interpret or implement the law in practice.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">The shift between the two frameworks can be understood as part of an ongoing evolution in both the packaged food sector and regulatory practice, rather than as a simple before/after contrast.
+The 2011 regulations drew on the industrial food landscape and data that were available at that time, while the 2020 framework reflects additional years of experience, feedback and product diversification.
+In that sense, the later regulations build on the earlier ones as the system as a whole becomes more capable of handling finer-grained labelling expectations.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Regulatory Delta: 2011 vs 2020</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">The differences between the 2011 and 2020 frameworks can be read as part of a longer, iterative process rather than as a sharp break.
+The 2011 regulations were drafted at a time when packaged and industrial foods, as well as digital tracking systems, were at an earlier stage of development, and they reflect the practices and concerns that were salient then.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>, <a href="#bib.bib8" title="" class="ltx_ref">8</a>]</cite>
+As product ranges expanded, more data accumulated and stakeholder feedback highlighted specific gaps, FSSAI consolidated those learnings into the 2020 Labelling and Display Regulations.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>, <a href="#bib.bib9" title="" class="ltx_ref">9</a>]</cite>
+The delta in this section is therefore best read as a record of how the system has been strengthened over time, not as a critique of the earlier framework.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">Table <a href="#S2.T1" title="Table 1 ‣ 2 Regulatory Delta: 2011 vs 2020 ‣ Regulatory Delta of Food Labelling Laws in India: A Comparative Analysis of the FSSAI 2011 and 2020 Regulations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> highlights some of the most visible differences between the 2011 and 2020 labelling rules as reflected in official texts and institutional summaries.<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>, <a href="#bib.bib2" title="" class="ltx_ref">2</a>, <a href="#bib.bib3" title="" class="ltx_ref">3</a>]</cite></p>
+</div>
+<figure id="S2.T1" class="ltx_table">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 1: </span>Regulatory delta between FSSAI 2011 and 2020 labelling rules</figcaption>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Dimension</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;"><span class="ltx_text ltx_font_bold">2011 Packaging &amp; Labelling</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;"><span class="ltx_text ltx_font_bold">2020 Labelling &amp; Display</span></span>
+</span>
+</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Allergen visibility</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;">Disclosures primarily embedded in the ingredient list, with responsibility on the consumer to scan the full list.</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;">Priority allergen groups such as cereals containing gluten, milk, peanuts, soy and sulphites are presented through clearer, more standardised declarations.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Naming / “true nature”</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;">Provides flexibility for brand-led naming on the principal display panel, guided by general fair-trading and anti-misleading provisions.</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;">Places greater emphasis on the name reflecting the true nature of the food, with more explicit expectations to avoid creating an erroneous impression.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Nutrition information</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;">Focus on per 100 g/ml declarations for key nutrients; per serving information is less central.</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;">Encourages a clearer pattern for showing nutrition per 100 g/ml <em class="ltx_emph ltx_font_italic">and</em> per serving, supporting front-of-pack and percentage RDA style interpretations.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Additives and warnings</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;">Class + name/INS for additives, with generic warning styles for certain substances (for example, colours or preservatives).</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;">Gives more structured attention to specific warnings (for example, for sulphites or particular additives) and clearer wording for sensitive population groups.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Front-of-pack (FoP) thinking</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;">Labelling can largely be organised around back and side panels, with front-of-pack as one option among many.</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;">Articulates more clearly which elements (such as name, veg/non-veg logo and certain declarations) belong on the principal display panel, creating a base for later FoP policies.</span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:113.8pt;"><span class="ltx_text ltx_font_bold">Enforcement posture</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:142.3pt;">Centres on ensuring information is not false or misleading, with compliance work often document- and text-centric.</span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:170.7pt;">The way declarations are structured makes it easier to imagine checklists, digital audits and front-of-pack policies that build on nutrient profile models.</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">The themes in this table reflect how official regulations and institutional commentaries describe the shift from 2011 to 2020.</p>
+</div>
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>What the Law is Aiming to Address</h3>
+
+<div id="S2.SS1.p1" class="ltx_para">
+<p class="ltx_p">Read together, these shifts point to a gradual tightening around a few recurring questions.</p>
+</div>
+<section id="S2.SS1.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Managing information density and risk signals.</h4>
+
+<div id="S2.SS1.SSS0.Px1.p1" class="ltx_para">
+<ul id="S2.I1" class="ltx_itemize">
+<li id="S2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Ensuring that allergens remain visible and recognisable, rather than being overlooked in dense ingredient lists.</p>
+</div>
+</li>
+<li id="S2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Reducing the chances that product names or descriptors leave consumers with an incomplete or ambiguous sense of what they are buying.</p>
+</div>
+</li>
+<li id="S2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Bringing more structure to how high fat, sugar and salt profiles are communicated, especially as processed food categories diversify.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S2.SS1.SSS0.Px2" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Supporting more structured labelling practices.</h4>
+
+<div id="S2.SS1.SSS0.Px2.p1" class="ltx_para">
+<ul id="S2.I2" class="ltx_itemize">
+<li id="S2.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">Encouraging standardised phrasing and placement for priority allergen information.</p>
+</div>
+</li>
+<li id="S2.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Clarifying expectations for front-of-pack elements, so that key signals are easier to locate.</p>
+</div>
+</li>
+<li id="S2.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">Laying technical groundwork for future tools such as front-of-pack labels informed by nutrient profile models.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S2.SS1.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">For lawyers and compliance teams, this means that purely formal arguments like “the information is somewhere on the pack” increasingly give way to questions about prominence, placement and structure.
+The 2020 frame leans towards asking whether the overall label presentation aligns with these expectations in a consistent way.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Practical Implications for Stakeholders</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">From a day-to-day point of view, the 2011–2020 changes nudge both companies and advisors towards more explicit internal systems for tracking allergens, names and nutrition.</p>
+</div>
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>For Food Businesses</h3>
+
+<div id="S3.SS1.p1" class="ltx_para">
+<ul id="S3.I1" class="ltx_itemize">
+<li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Allergen tracking becomes more explicit:</span> manufacturers benefit from maintaining internal mappings between ingredients and standard allergen groups, rather than relying only on free-text descriptions.</p>
+</div>
+</li>
+<li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Naming policies may require review:</span> product names and descriptors that were aligned with earlier interpretations may need revisiting to match the “true nature” emphasis in the 2020 framework.</p>
+</div>
+</li>
+<li id="S3.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Nutrition data hygiene matters more:</span> keeping consistent, up-to-date values for energy, sugars, fats and sodium supports both regulatory expectations and clearer communication with consumers.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2 </span>For Lawyers and Compliance Teams</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<ul id="S3.I2" class="ltx_itemize">
+<li id="S3.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Case work can use more structure:</span> instead of only reading long labels line by line, advisors can ask whether allergen declarations, names and nutrition panels line up with the specific structures the 2020 regulations describe.</p>
+</div>
+</li>
+<li id="S3.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Advice can be more template-driven:</span> it becomes realistic to build standard checklists for allergens, naming and nutrition that can be reused across clients or product lines.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S3.SSx1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">The Compliance Checklist for Startups</h3>
+
+<div id="S3.SSx1.p1" class="ltx_para">
+<p class="ltx_p">For founders and early-stage teams, a quick sanity check can be more useful than a long memo.
+A simple checklist that falls out of the 2011–2020 delta is:</p>
+</div>
+<div id="S3.SSx1.p2" class="ltx_para">
+<ul id="S3.I3" class="ltx_itemize">
+<li id="S3.I3.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">x</span></span></span> 
+<div id="S3.I3.ix1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Allergen coverage:</span> Have you identified and labelled all FSSAI priority allergen groups that apply to your product?</p>
+</div>
+</li>
+<li id="S3.I3.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">x</span></span></span> 
+<div id="S3.I3.ix2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Front-of-pack name:</span> Does the name on the principal display panel reflect the true nature of the food, rather than only a marketing phrase?</p>
+</div>
+</li>
+<li id="S3.I3.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_phantom"><span style="visibility:hidden">x</span></span></span> 
+<div id="S3.I3.ix3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Per serving signals:</span> Is the per-serving nutrition information (including percentage RDA where applicable) clear enough for a consumer to understand the product’s fat, sugar and salt profile at a glance?</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S3.SSx1.p3" class="ltx_para">
+<p class="ltx_p">Treating these as a recurring checklist rather than a one-time launch task makes it easier to stay aligned with how the 2020 regulations expect labels to behave.</p>
+</div>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Implications for Digital Ingredient Identity Systems (IFID)</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">Because the 2020 regulations transition from unstructured text to specific, standardized declarations, the ’regulatory delta’ described here serves as a blueprint for any system—whether a printed label or a digital database—aiming for compliance.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">At a bare minimum, an ingredient record in such a system can support:</p>
+</div>
+<div id="S4.p3" class="ltx_para">
+<ul id="S4.I1" class="ltx_itemize">
+<li id="S4.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">A canonical “true nature” name</span> plus a list of vernacular or commercial aliases, so that regional naming and compliant labelling language can be linked cleanly.</p>
+</div>
+</li>
+<li id="S4.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Structured allergen membership</span>, for example a small set of flags for cereals containing gluten, milk, peanuts, tree nuts, soy and sulphites, instead of only storing full text ingredient names.</p>
+</div>
+</li>
+<li id="S4.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Basic nutrient fields</span> (energy, total sugars, saturated fat, sodium per 100 g/ml) in a consistent format, so that front-of-pack or HFSS-style rules can be applied programmatically later if needed.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p">If these fields live in a stable backend identity layer, then future FSSAI amendments—such as a new HFSS threshold or a focus on a particular additive—can be implemented as updated rules that run across existing products, rather than as one-off manual relabelling exercises.</p>
+</div>
+<section id="S4.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">4.1 </span>Mandatory vs Optional Fields in IFID Records</h3>
+
+<div id="S4.SS1.p1" class="ltx_para">
+<p class="ltx_p">For a digital ingredient identity layer to stay aligned with the 2020 regulations and still be useful for future extensions, it helps to separate <em class="ltx_emph ltx_font_italic">mandatory</em> compliance fields from <em class="ltx_emph ltx_font_italic">optional</em> but valuable metadata.</p>
+</div>
+<section id="S4.SS1.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Mandatory fields (driven by FSSAI 2020).</h4>
+
+<div id="S4.SS1.SSS0.Px1.p1" class="ltx_para">
+<ul id="S4.I2" class="ltx_itemize">
+<li id="S4.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I2.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Canonical “true nature” name:</span> a single, standardised name that reflects what the ingredient actually is, to reduce scope for ambiguous naming on labels.</p>
+</div>
+</li>
+<li id="S4.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I2.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Allergen group membership:</span> explicit mapping of each ingredient to the relevant FSSAI priority allergen groups (for example cereals containing gluten, milk, peanuts, tree nuts, soy, sulphites) so that allergen statements can be generated consistently.</p>
+</div>
+</li>
+<li id="S4.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I2.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Core nutrient values:</span> at least energy, total sugars, saturated fat and sodium per 100 g/ml, to support basic HFSS-style signalling and any future front-of-pack requirements that depend on these nutrients.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S4.SS1.SSS0.Px2" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Optional metadata (for future-proofing and usability).</h4>
+
+<div id="S4.SS1.SSS0.Px2.p1" class="ltx_para">
+<ul id="S4.I3" class="ltx_itemize">
+<li id="S4.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Vernacular and commercial names:</span> regional aliases and brand-style names that help link consumer-facing labels back to a single canonical ingredient record without losing cultural context.</p>
+</div>
+</li>
+<li id="S4.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Versioned compliance rules and flags:</span> pointers from the ingredient record to external rule-sets (for example “FSSAI_2011”, “FSSAI_2020”, “FSSAI_2025”) so that when regulations change, new rules can be applied to existing IFIDs in an instant audit, without rewriting the underlying identities.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S4.SS1.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">Keeping this distinction clear makes it easier to run the IFID project in a continuous loop: mandatory fields ensure basic regulatory alignment, while optional metadata can be expanded over time as new use-cases and amendments appear.</p>
+</div>
+<div id="S4.SS1.SSS0.Px2.p3" class="ltx_para">
+<p class="ltx_p">From a data science point of view, the 2020 structure can also be read as an invitation to build <em class="ltx_emph ltx_font_italic">API-first</em> compliance systems: once allergens, names and nutrients are represented as stable fields in an ingredient database, they can be exposed through services that run automated checks whenever a recipe changes, a new product is proposed, or a regulation is updated.
+In that sense, the same design that supports paper labels today also lays the groundwork for digital traceability and machine-readable audits in the future.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span>Conclusion</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p class="ltx_p">The move from the 2011 Packaging and Labelling Regulations to the 2020 Labelling and Display Regulations marks a gradual shift from mostly text-heavy transparency towards more structured, salient labelling.
+For non-technical readers, the core takeaway is that allergens, naming and nutrition are increasingly treated as fields that can be checked and compared in a more systematic way, rather than as unstructured blocks of text.</p>
+</div>
+<div id="S5.p2" class="ltx_para">
+<p class="ltx_p">For data-oriented projects such as IFID, this same delta is a design clue: if ingredient records are aligned with the way the 2020 rules think about allergens, names and nutrients, then it becomes possible to build shared tools that lawyers, regulators and food businesses can all use, without each group having to redo the basic comparison between 2011 and 2020 from scratch.
+
+<br class="ltx_break">
+<br class="ltx_break">
+<br class="ltx_break">
+<br class="ltx_break"></p>
+</div>
+</section>
+
+
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+<ul class="ltx_biblist" style="list-style:none;padding:0;margin:0;">
+
+<li id="bib.bib1" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[1]</span>
+  <span style="display:inline;">Food Safety and Standards Authority of India. <em class="ltx_emph ltx_font_italic">Food Safety and Standards (Packaging and Labelling) Regulations, 2011</em>. Government of India, 2011.</span>
+</li>
+
+<li id="bib.bib2" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[2]</span>
+  <span style="display:inline;">Food Safety and Standards Authority of India. <em class="ltx_emph ltx_font_italic">Food Safety and Standards (Labelling and Display) Regulations, 2020</em>. Government of India, 2020.</span>
+</li>
+
+<li id="bib.bib3" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[3]</span>
+  <span style="display:inline;">Food Safety and Standards Authority of India. Frequently Asked Questions (FAQs) on FSS (Labelling and Display) Regulations, 2020.</span>
+</li>
+
+<li id="bib.bib4" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[4]</span>
+  <span style="display:inline;">Radhika Pande et al. Front-of-pack nutrition labelling in India. <em class="ltx_emph ltx_font_italic">The Lancet Public Health</em>, 5(4):e195–e196, 2020.</span>
+</li>
+
+<li id="bib.bib5" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[5]</span>
+  <span style="display:inline;">World Health Organization. <em class="ltx_emph ltx_font_italic">WHO Nutrient Profile Model for South-East Asia Region</em>. WHO Regional Office for South-East Asia, 2017.</span>
+</li>
+
+<li id="bib.bib6" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[6]</span>
+  <span style="display:inline;">Chandra Pandav et al. The WHO South-East Asia Region Nutrient Profile Model is quite appropriate for India: an exploration of 31,516 food products. <em class="ltx_emph ltx_font_italic">Nutrients</em>, 13(8):2782, 2021.</span>
+</li>
+
+<li id="bib.bib7" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[7]</span>
+  <span style="display:inline;">Indian Council of Medical Research–National Institute of Nutrition. Dietary guidelines and nutrient thresholds relevant to high fat, sugar and salt (HFSS) foods.</span>
+</li>
+
+<li id="bib.bib8" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[8]</span>
+  <span style="display:inline;">Citizen Consumer and Civic Action Group. Front of pack labelling in India: background and context.</span>
+</li>
+
+<li id="bib.bib9" class="ltx_bibitem" style="display:flex;gap:0.75em;margin-bottom:0.9em;line-height:1.5;">
+  <span class="ltx_tag ltx_role_refnum ltx_tag_bibitem" style="flex-shrink:0;min-width:2em;">[9]</span>
+  <span style="display:inline;">Food Safety and Standards Authority of India. Compendium of Food Safety and Standards (Labelling and Display) Regulations, 2020.</span>
+</li>
+
+</ul>
+</section>
+<div class="ltx_rdf" about="" property="dcterms:creator" content="Sai Nikhil Vukka; Lalitha A. R."></div>
+<div class="ltx_rdf" about="" property="dcterms:subject" content="FSSAI 2011, FSSAI 2020, food labelling law, regulatory delta, IFID, Indian Food Informatics Data,Sai Nikhil Vukka,Lalitha A.R."></div>
+<div class="ltx_rdf" about="" property="dcterms:subject" content="Comparative regulatory analysis of Indian food labelling laws"></div>
+<div class="ltx_rdf" about="" property="dcterms:title" content="Regulatory Delta of Food Labelling Laws in India:
+A Comparative Analysis of the FSSAI 2011 and 2020 Regulations"></div>
+
+
+
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 21 13:25:02 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
