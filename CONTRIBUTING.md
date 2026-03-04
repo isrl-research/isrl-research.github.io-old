@@ -107,7 +107,7 @@ After `format.py` runs, manual cleanup is often needed:
 
 **4. Source TeX**
 
-Starting **April 2026**, the `.tex` source files for all new records will be available in the `/source-tex` repository in the iSRL GitHub org. Until then, reach out via the issue if you need a source file.
+The `.tex` source files for all new records are available in the `/source-tex` repository in the iSRL GitHub org. The older files will be made available around April 2025. Until then, Please reach out via the specific issue if a source file is needed.
 
 ---
 
